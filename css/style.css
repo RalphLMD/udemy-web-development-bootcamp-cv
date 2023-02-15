@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbfaf6;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    width: 30%;
+    border-width: 7px;
+    color: #d3d3d3;
+    margin: 30px;
+}
+
+h1, h3 {
+    color: #b94747;
+}
+
+a {
+    text-decoration: none;
+    color: #b94747;
+}
+
+a:hover {
+    color: #000000;
+}
+
+.resume {
+    margin: 25px;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    background-color: gray;
+}
+
+.red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.yellow {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 0px;
+}
+
