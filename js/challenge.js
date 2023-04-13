@@ -328,8 +328,8 @@ function fizzBuzz() {
 function whosPaying(names) {
    var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]; // Create array
    var noOfNames = names.length; // Get total no 
-   var randomName = Math.floor(Math.random() * noOfNames); // Randomize name
-   var pickedName = names[randomName]; // Store random name
+   var randomName = Math.floor(Math.random() * noOfNames); // Randomize number based on array length
+   var pickedName = names[randomName]; // Choose random name
        
       return pickedName + " is going to buy lunch today!";
 }
@@ -416,13 +416,12 @@ function fibonacciGenerator (n) {
       output = [0, 1];
    } else {
       output = [0, 1];
-      output.push(output[output.length - 2] + output[output.length - 1]);
+      for (var i = 2; i < n; i++){
+         output.push(output[output.length - 2] + output[output.length - 1]);
+      }
    }
-
 
    return output;
 }
-
-
-var output = fibonacciGenerator(9);
+output = fibonacciGenerator(9);
 console.log(output);
